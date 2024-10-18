@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --background: #ffffff;
+    --text-primary: #000;
+    --button-bg: #000;
+    --button-text: #ffffff;
+}
+
+[data-theme='dark'] {
+    --backgroundd: rgba(43, 56, 68, 1);
+    --body-background: rgba(32, 44, 54, 1);
+    --text-color: rgba(255, 255, 255, 1);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px 80px;
+    flex-wrap: wrap;
+    /* margin-bottom: 48px; */
+    background: var(--body-background);
+}
+
+.navbar .put-input {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.0532);
+}
+
+.navbar .put-input .nav-input {
+    width: 480px;
+    height: 56px;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    position: relative;
+    padding: 0 0 0 100px;
+    z-index: 1;
+    border-radius: 5px;
+    background: var(--backgroundd);
+    color: var(--text-color);
+    border: transparent;
+}
+
+.navbar .put-input .nav-input::placeholder {
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 0 0 0 0px;
+    color: var(--text-color);
+}
+
+.navbar .put-input .fa-solid {
+    position: absolute;
+    transform: translateX(40px);
+    font-size: 18px;
+    z-index: 2;
+    color: var(--text-color);
+}
+
+.nav-select {
+    width: 200px;
+    height: 56px;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.0532);
+    padding: 18px 24px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border: transparent;
+    background: var(--backgroundd);
+    color: var(--text-color);
+}
+
+.nav-select .options {
+    font-family: Nunito Sans;
+    font-size: 14px;
+    background: var(--backgroundd);
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 20px;
+}
+
+@media (max-width: 992px) {}
+@media (max-width: 850px) {}
+/* mobile */
+@media (max-width: 768px) {}
+@media (max-width: 734px) {}
+@media (max-width: 684px) {}
+@media (max-width: 667px) {
+    .navbar .put-input .nav-input {
+        width: 343px;
+        margin-bottom: 40px;
+        padding: 0 0 0 0;
+        position: relative;
+    }
+    .navbar .put-input .fa-solid {
+        position: absolute;
+        transform: translateX(40px) translateY(-18px);
+        font-size: 18px;
+        z-index: 2;
+        color: var(--text-color);
+    }
+    .navbar {
+        padding: 24px 0px;
+    }
+}
+/* mobile < 576  */
+@media (max-width: 576px) {
+    .navbar .put-input .nav-input {
+        width: 343px;
+        padding: 0 0 0 100px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+    .navbar .put-input .fa-solid {
+        position: absolute;
+        transform: translateX(40px) translateY(-18px);
+        font-size: 18px;
+        z-index: 2;
+        color: var(--text-color);
+    }
+    .navbar {
+        padding: 24px 0px;
+    }
+}
+@media (max-width: 480px) {
+    .nav-input {
+        width: 300px;
+        padding: 0 0 0 0;
+        margin-bottom: 40px;
+        position: relative;
+        padding: 0pxf;
+    }
+    .navbar .put-input .fa-solid {
+        position: absolute;
+        transform: translateX(40px) translateY(-18px);
+        font-size: 18px;
+        z-index: 2;
+        color: var(--text-color);
+    }
+    .navbar {
+        padding: 24px 16px;
+    }
+}
+@media (max-width: 412px) {}
+@media (max-width: 375px) {}
+@media (max-width: 320px) {}
